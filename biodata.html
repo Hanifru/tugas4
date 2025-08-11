@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Biodata — Hanif Maulana Fadhila</title>
+    <style>
+        :root {
+            --bg: #f5f7fb;
+            --card: #ffffff;
+            --accent: #2b6ef6;
+            --muted: #6b7280;
+            --radius: 14px;
+        }
+
+        * {
+            box-sizing: border-box;
+            font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, 'Helvetica Neue', Arial
+        }
+
+        body {
+            margin: 0;
+            background: linear-gradient(180deg, var(--bg), #eef2ff);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 32px
+        }
+
+        .card {
+            background: var(--card);
+            width: 900px;
+            max-width: 100%;
+            border-radius: var(--radius);
+            box-shadow: 0 8px 30px rgba(34, 41, 47, 0.08);
+            overflow: hidden;
+            display: grid;
+            grid-template-columns: 280px 1fr
+        }
+
+        .left {
+            padding: 28px;
+            background: linear-gradient(180deg, #ffffff, #f8fbff);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 18px
+        }
+
+        .photo {
+            width: 180px;
+            height: 180px;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 6px solid #fff;
+            box-shadow: 0 6px 18px rgba(43, 110, 246, 0.12)
+        }
+
+        .photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block
+        }
+
+        h1 {
+            font-size: 20px;
+            margin: 0;
+            text-align: center
+        }
+
+        p.role {
+            margin: 0;
+            color: var(--muted);
+            font-size: 14px
+        }
+
+        .contact {
+            width: 100%;
+            margin-top: 8px
+        }
+
+        .contact p {
+            margin: 6px 0;
+            color: var(--muted);
+            font-size: 14px
+        }
+
+        .skills {
+            width: 100%;
+            margin-top: 12px
+        }
+
+        .skill {
+            display: inline-block;
+            background: #eef4ff;
+            color: #0f1724;
+            padding: 6px 10px;
+            border-radius: 999px;
+            margin: 6px 6px 0 0;
+            font-size: 13px
+        }
+
+        .right {
+            padding: 28px
+        }
+
+        .section {
+            margin-bottom: 18px
+        }
+
+        .section h2 {
+            margin: 0 0 8px 0;
+            font-size: 16px;
+            color: #0f1724
+        }
+
+        .section p,
+        .section li {
+            color: #374151;
+            font-size: 14px;
+            margin: 4px 0
+        }
+
+        .info-list {
+            list-style: none;
+            padding: 0;
+            margin: 0
+        }
+
+        .info-list li {
+            display: flex;
+            gap: 12px
+        }
+
+        .label {
+            min-width: 120px;
+            color: var(--muted)
+        }
+
+        .actions {
+            display: flex;
+            gap: 12px;
+            margin-top: 16px
+        }
+
+        .btn {
+            background: var(--accent);
+            color: #fff;
+            padding: 10px 14px;
+            border-radius: 10px;
+            border: 0;
+            cursor: pointer;
+            font-weight: 600
+        }
+
+        .btn.ghost {
+            background: transparent;
+            color: var(--accent);
+            border: 1px solid rgba(43, 110, 246, 0.12)
+        }
+
+        @media(max-width:700px) {
+            .card {
+                grid-template-columns: 1fr;
+                gap: 0
+            }
+
+            .left {
+                flex-direction: row;
+                padding: 16px
+            }
+
+            .photo {
+                width: 86px;
+                height: 86px;
+                border-radius: 10px
+            }
+
+            .right {
+                padding: 16px
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="card" role="main">
+        <aside class="left">
+            <div class="photo">
+                <img alt="Foto Hanif" src="https://via.placeholder.com/300x300.png?text=Foto+Hanif" />
+            </div>
+            <div style="text-align:center">
+                <h1>Hanif Maulana Fadhila</h1>
+                <p class="role">Pelajar / Calon Web Developer</p>
+            </div>
+
+            <div class="contact">
+                <p><strong>Alamat:</strong> Jember, Indonesia</p>
+                <p><strong>Email:</strong> hanif@example.com</p>
+                <p><strong>Telepon:</strong> +62 812-3456-7890</p>
+            </div>
+
+            <div class="skills">
+                <div class="skill">HTML</div>
+                <div class="skill">CSS</div>
+                <div class="skill">JavaScript</div>
+                <div class="skill">Figma</div>
+            </div>
+        </aside>
+
+        <section class="right">
+            <div class="section">
+                <h2>Tentang Saya</h2>
+                <p>Halo! Saya Hanif, pelajar SMK yang sedang mempelajari pengembangan web. Saya tertarik membuat website
+                    interaktif dan desain antarmuka yang responsif.</p>
+            </div>
+
+            <div class="section">
+                <h2>Pendidikan</h2>
+                <ul class="info-list">
+                    <li><span class="label">2022 — Sekarang</span><span>SMK Negeri X — Jurusan Rekayasa Perangkat Lunak
+                            (RPL)</span></li>
+                    <li><span class="label">2019 — 2021</span><span>SMP Negeri Y</span></li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Pengalaman / Proyek Singkat</h2>
+                <ul>
+                    <li>Membuat website portofolio sederhana (HTML/CSS/JS)</li>
+                    <li>Proyek kelompok: Aplikasi kuis pendidikan berbasis web</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Keterampilan</h2>
+                <p>HTML, CSS, JavaScript, Git, dasar-dasar PHP, desain UI sederhana</p>
+            </div>
+
+            <div class="actions">
+                <button class="btn" onclick="downloadBiodata()">Unduh CV (PDF)</button>
+                <button class="btn ghost" onclick="editPrompt()">Minta edit</button>
+            </div>
+
+            <small style="display:block;margin-top:12px;color:var(--muted)">Catatan: Ganti data (email, alamat, foto)
+                sesuai kebutuhan.</small>
+        </section>
+    </main>
+
+    <script>
+        function downloadBiodata() {
+            alert('Fitur unduh belum diaktifkan. Anda bisa mencetak halaman ini (Ctrl+P) atau minta saya menambahkan fungsi unduh PDF.');
+        }
+        function editPrompt() {
+            const msg = 'Mau bagian mana yang diubah? (contoh: email, foto, pendidikan, warna)';
+            const res = prompt(msg);
+            if (res) alert('Oke! Saya akan memperbarui: ' + res + '\nSilahkan beri detail perubahan.');
+        }
+    </script>
+</body>
+
+</html>
